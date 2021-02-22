@@ -1,0 +1,12 @@
+img {
+  width: 100%;
+
+  opacity: 0;
+  transform: translateY(0px);
+  transition: 0.3s all linear;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}

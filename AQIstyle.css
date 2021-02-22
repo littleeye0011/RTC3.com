@@ -1,0 +1,76 @@
+:root {
+  --good-aqi-color: #b0e767;
+  --medium-aqi-color: #fe9b56;
+  --bad-aqi-color: #fe6a69;
+  --current-aqi-color: var(--good-aqi-color);
+}
+
+.content-aqi {
+  box-shadow: 0 10px 10px 0 #515154;
+}
+aside {
+  margin-left: 20px;
+  width: 300px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #515154;
+}
+
+.card {
+  width: 300px;
+}
+
+.aqi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background-color: var(--current-aqi-color);
+
+  height: 170px;
+  padding: 0 0;
+
+  border: 1px solid var(--current-aqi-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.aqi > h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.location {
+  color: #ffffff;
+}
+
+.city {
+  margin: 0;
+  font-size: 2em;
+}
+
+.state-country {
+  margin-top: 0;
+}
+
+.info {
+  display: flex;
+  background-color: #ffffff;
+
+  border: 1px solid #e6e6e6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info > * {
+  border-right: 1px solid #e6e6e6;
+  padding: 20px;
+  flex: 1;
+}
+
+.info > *:last-child {
+  border: none;
+}
